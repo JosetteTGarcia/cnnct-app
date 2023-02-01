@@ -1,0 +1,2 @@
+class GatherersController < ApplicationController
+end
