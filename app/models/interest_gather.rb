@@ -1,0 +1,2 @@
+class InterestGather < ApplicationRecord
+end
