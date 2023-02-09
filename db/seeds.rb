@@ -36,16 +36,29 @@
 #     }
 # ])
 
-activities = Activity.create([
-    { a_type: 'Coffee' }, 
-    { a_type: 'Talking' },
-    { a_type: 'Walking' },
-    { a_type: 'Yoga' },
-    { a_type: 'Concert'},
-    { a_type: 'Drinks' },
-    { a_type: 'Dancing' },
-    { a_type: 'Art Show' },
-    { a_type: 'Dinner' },
+# activities = Activity.create([
+#     { a_type: 'Coffee' }, 
+#     { a_type: 'Talking' },
+#     { a_type: 'Walking' },
+#     { a_type: 'Yoga' },
+#     { a_type: 'Concert'},
+#     { a_type: 'Drinks' },
+#     { a_type: 'Dancing' },
+#     { a_type: 'Art Show' },
+#     { a_type: 'Dinner' },
+# ])
+
+
+interests = Interest.create([
+    { i_type: 'Coffee' }, 
+    { i_type: 'Working Out' },
+    { i_type: 'Outdoors' },
+    { i_type: 'Arts' },
+    { i_type: 'Music'},
+    { i_type: 'Bars' },
+    { i_type: 'Dancing' },
+    { i_type: 'Food' },
+    { i_type: 'Meditation' }
 ])
 
 
