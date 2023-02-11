@@ -49,21 +49,30 @@
 # ])
 
 
-interests = Interest.create([
-    { i_type: 'Coffee' }, 
-    { i_type: 'Working Out' },
-    { i_type: 'Outdoors' },
-    { i_type: 'Arts' },
-    { i_type: 'Music'},
-    { i_type: 'Bars' },
-    { i_type: 'Dancing' },
-    { i_type: 'Food' },
-    { i_type: 'Meditation' }
-])
+# interests = Interest.create([
+#     { i_type: 'Coffee' }, 
+#     { i_type: 'Working Out' },
+#     { i_type: 'Outdoors' },
+#     { i_type: 'Arts' },
+#     { i_type: 'Music'},
+#     { i_type: 'Bars' },
+#     { i_type: 'Dancing' },
+#     { i_type: 'Food' },
+#     { i_type: 'Meditation' }
+# ])
 
 
-# movies = Movie.create([
-#     { name: 'Star Wars' }, 
-#     { name: 'Lord of the Rings' }
+# gathers = Gather.create([
+#     { 
+#         creator_id: ,
+#         activity_id: , 
+#         gather_point: "Radio Coffee & Beer - 4204 Menchaca Rd, Austin, TX 78704"
+#         active: true, 
+
+
+
+
+#     }, 
+ 
 
 # ])
