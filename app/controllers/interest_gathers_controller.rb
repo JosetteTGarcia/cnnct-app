@@ -1,2 +1,0 @@
-class InterestGathersController < ApplicationController
-end

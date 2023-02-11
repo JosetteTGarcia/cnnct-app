@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_01_022949) do
+ActiveRecord::Schema.define(version: 2023_02_11_230102) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,27 +21,20 @@ ActiveRecord::Schema.define(version: 2023_02_01_022949) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "gatherers", force: :cascade do |t|
-    t.bigint "attended_gather_id"
-    t.bigint "gather_attendee_id"
+  create_table "attendences", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "gathering_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["attended_gather_id"], name: "index_gatherers_on_attended_gather_id"
-    t.index ["gather_attendee_id"], name: "index_gatherers_on_gather_attendee_id"
+    t.index ["gathering_id"], name: "index_attendences_on_gathering_id"
+    t.index ["user_id"], name: "index_attendences_on_user_id"
   end
 
-  create_table "gathers", force: :cascade do |t|
+  create_table "gatherings", force: :cascade do |t|
     t.integer "creator_id"
     t.integer "activity_id"
-    t.text "gather_point"
+    t.text "location"
     t.boolean "active"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "interest_gathers", force: :cascade do |t|
-    t.string "gather_id"
-    t.string "interest_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -64,6 +57,6 @@ ActiveRecord::Schema.define(version: 2023_02_01_022949) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "gatherers", "gathers", column: "attended_gather_id"
-  add_foreign_key "gatherers", "users", column: "gather_attendee_id"
+  add_foreign_key "attendences", "gatherings"
+  add_foreign_key "attendences", "users"
 end

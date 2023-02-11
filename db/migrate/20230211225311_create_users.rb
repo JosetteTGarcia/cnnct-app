@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :state
       t.string :city
       t.string :bio
-
+      
       t.timestamps
     end
   end
