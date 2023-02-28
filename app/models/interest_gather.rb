@@ -1,2 +1,2 @@
-class InterestGather < ApplicationRecord
+class InterestGather < ActiveRecord::Base 
 end

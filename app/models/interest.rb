@@ -1,2 +1,2 @@
-class Interest < ApplicationRecord
+class Interest < ActiveRecord::Base 
 end
