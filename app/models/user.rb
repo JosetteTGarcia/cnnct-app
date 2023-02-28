@@ -1,4 +1,4 @@
-class User < ApplicationRecord
+class User < ActiveRecord::Base 
 
 # User has many gathering events that they have created, 
 # labeled creator_id in the Gathering table
