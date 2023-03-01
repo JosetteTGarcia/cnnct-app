@@ -5,4 +5,11 @@ class Gathering < ActiveRecord::Base
     has_many :attendees,
         through: :attendences,
         class_name: 'User'
+
+    belongs_to :activity
+
+
+    has_many :interest_gathers
+    has_many :interests,
+        through: :interest_gathers
 end
