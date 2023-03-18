@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   
-    # resources :gathers
-    # resources :users
-    # resources :activities, only: [:index, :show, :create]
-    # resources :interests, only: [:index, :show, :create]
+    
+    resources :users
+    resources :activities
+    resources :gathering
+    resources :interests
+    resources :activity
   
 
     # post "/login", to: "sessions#create"
@@ -11,8 +13,7 @@ Rails.application.routes.draw do
     # post "/signup", to: "users#create"
     # get "/me", to: "users#show"
 
-    get '/users', to: 'users#index'
-    get '/users/:id', to: 'users#show'
+    
   
 
   # Routing logic: fallback requests for React Router.

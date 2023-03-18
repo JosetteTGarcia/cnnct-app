@@ -11,7 +11,7 @@ class UsersController < ApplicationController
         if user
             render json: user,  except: [:id, :created_at, :updated_at], methods: [:location]
         else
-            render json: {error: "User not found"}   
+            render json: {error: "User not found"}, status: :not_found 
 
         end
     end
