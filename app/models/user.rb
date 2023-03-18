@@ -9,4 +9,9 @@ class User < ActiveRecord::Base
     has_many :attendences
     has_many :gatherings, 
         through: :attendences
+
+
+        def location
+            "#{city}, #{state}"
+        end
 end
