@@ -7,8 +7,13 @@ class UsersController < ApplicationController
 
 
     def show 
-        user = User.find(params[:id])
-        render json: user,  except: [:id, :created_at, :updated_at], methods: [:location]
+        user = User.find_by(id: params[:id])
+        if user
+            render json: user,  except: [:id, :created_at, :updated_at], methods: [:location]
+        else
+            render json: {error: "User not found"}   
+
+        end
     end
 
 end
