@@ -17,4 +17,9 @@ class InterestsController < ApplicationController
         end
     end
 
+    def create
+        interest = Interest.create(i_type: params[:i_type])
+        render json: interest, status: :created
+    end
+
 end
