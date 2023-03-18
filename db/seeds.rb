@@ -62,17 +62,17 @@
 # ])
 
 
-# gathers = Gather.create([
-#     { 
-#         creator_id: ,
-#         activity_id: , 
-#         gather_point: "Radio Coffee & Beer - 4204 Menchaca Rd, Austin, TX 78704"
-#         active: true, 
+gathers = Gathering.create([
+    { 
+        creator_id: ,
+        activity_id: , 
+        gather_point: "Radio Coffee & Beer - 4204 Menchaca Rd, Austin, TX 78704"
+        active: true, 
 
 
 
 
-#     }, 
+    }, 
  
 
-# ])
+])

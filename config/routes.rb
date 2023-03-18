@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     
     resources :users
     resources :activities
-    resources :gathering
+    resources :gatherings
     resources :interests
     resources :activity
   
