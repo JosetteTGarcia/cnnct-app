@@ -18,4 +18,9 @@ class ActivitiesController < ApplicationController
         end
     end
 
+    def create
+        activity = Activty.create(a_type: params[:a_type])
+        render json: activity, status: :created
+    end
+
 end

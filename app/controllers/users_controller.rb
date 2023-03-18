@@ -16,4 +16,9 @@ class UsersController < ApplicationController
         end
     end
 
+    def create
+        user = User.create(username: params[:username], img: params[:img], first_name: params[:first_name], last_name: params[:last_name], state: params[:state], city: params[:city], bio: params[:bio])
+        render json: user, status: :created
+    end
+
 end
