@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :activities
     resources :gatherings
     resources :interests
-    resources :activity
+    resources :attendences
   
 
     # post "/login", to: "sessions#create"

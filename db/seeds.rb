@@ -62,17 +62,25 @@
 # ])
 
 
-gathers = Gathering.create([
-    { 
-        creator_id: ,
-        activity_id: , 
-        gather_point: "Radio Coffee & Beer - 4204 Menchaca Rd, Austin, TX 78704"
-        active: true, 
-
-
-
-
-    }, 
+# gathers = Gathering.create([
+#     { 
+#         creator_id: 1,
+#         activity_id: 6, 
+#         location: "Hotel Vegas - Austin, Tx",
+#         active: true 
+#     }
  
 
-])
+# ])
+
+
+# attendences = Attendence.create([
+#     { 
+#         user_id: 3,
+#         gathering_id: 1, 
+#     },
+#     { 
+#         user_id: 2,
+#         gathering_id: 1, 
+#     }
+# ])
