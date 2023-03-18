@@ -9,7 +9,7 @@ class ActivitiesController < ApplicationController
 
 
     def show 
-        activity = Activty.find_by(id: params[:id])
+        activity = Activity.find_by(id: params[:id])
         if activity
             render json: activity,  except: [:id, :created_at, :updated_at]
         else
@@ -19,7 +19,7 @@ class ActivitiesController < ApplicationController
     end
 
     def create
-        activity = Activty.create(a_type: params[:a_type])
+        activity = Activity.create(a_type: params[:a_type])
         render json: activity, status: :created
     end
 
